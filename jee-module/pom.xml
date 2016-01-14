@@ -10,7 +10,7 @@
 
     <groupId>com.fa.module-example</groupId>
     <artifactId>module-example</artifactId>
-    <version>0.0.4-SNAPSHOT</version>
+    <version>0.0.4</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -21,7 +21,7 @@
     <scm>
         <connection>scm:git:https://github.com/jgaspard-fa/gitflow-fa.git</connection>
         <developerConnection>scm:git:https://github.com/jgaspard-fa/gitflow-fa.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>mod-ex-tag-0.0.4</tag>
   </scm>
 
 </project>
