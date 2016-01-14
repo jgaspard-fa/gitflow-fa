@@ -33,8 +33,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jee-module1/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml.next" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jee-module1/pom.xml.next">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -265,12 +275,12 @@
       <option name="number" value="Default" />
       <updated>1452781733185</updated>
       <workItem from="1452781737858" duration="2175000" />
-      <workItem from="1452788451640" duration="2271000" />
+      <workItem from="1452788451640" duration="2363000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4446000" />
+    <option name="totallyTimeSpent" value="4538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="260" y="43" width="1400" height="937" extended-state="0" />
@@ -339,6 +349,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jee-module1/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jee-module1/pom.xml.next">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
