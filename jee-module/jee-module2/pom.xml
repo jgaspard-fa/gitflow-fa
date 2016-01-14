@@ -5,12 +5,12 @@
     <parent>
         <groupId>com.fa.module-example</groupId>
         <artifactId>module-example</artifactId>
-        <version>0.0.3</version>
+        <version>0.0.4-SNAPSHOT</version>
     </parent>
 
     <groupId>com.fa.module-example</groupId>
     <artifactId>jee-module1</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4-SNAPSHOT</version>
 
 
 </project>
