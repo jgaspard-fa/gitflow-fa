@@ -19,6 +19,7 @@
     </modules>
 
     <!-- comment added in release branch 0.0.8 -->
+    <!-- comment added in release branch 0.0.11 -->
     <build>
         <plugins>
             <plugin>
