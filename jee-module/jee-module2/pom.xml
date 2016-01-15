@@ -5,12 +5,20 @@
     <parent>
         <groupId>com.fa.module-example</groupId>
         <artifactId>module-example</artifactId>
-        <version>0.0.8</version>
+        <version>0.0.9</version>
     </parent>
 
-    <groupId>com.fa.module-example</groupId>
-    <artifactId>jee-module1</artifactId>
-    <version>0.0.8</version>
+    <!-- comment added in develop branch while release 0.0.8 -->
+    <artifactId>jee-module2</artifactId>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.fa.module-example</groupId>
+            <artifactId>jee-module1</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
 
 
 </project>
