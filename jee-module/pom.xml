@@ -23,6 +23,7 @@
     <!-- comment added in release 0.0.12 -->
     <!-- comment added in hotfix 0.0.13.1 -->
     <!-- comment added in hotfix 0.0.13.2 -->
+    <!-- comment added in develop while release 0.0.15 -->
     <build>
         <plugins>
             <plugin>
