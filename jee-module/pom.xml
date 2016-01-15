@@ -38,6 +38,7 @@
                     </flowInitContext>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <pushReleases>true</pushReleases>
+                    <pushHotfixes>true</pushHotfixes>
                 </configuration>
             </plugin>
         </plugins>
