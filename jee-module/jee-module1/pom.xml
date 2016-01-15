@@ -8,8 +8,6 @@
         <version>0.0.9-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.fa.module-example</groupId>
-    <artifactId>jee-module2</artifactId>
-    <version>0.0.9-SNAPSHOT</version>
+    <artifactId>jee-module1</artifactId>
 
 </project>
