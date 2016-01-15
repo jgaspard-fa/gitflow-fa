@@ -19,7 +19,7 @@
     </modules>
 
     <properties>
-        <java-module.version>0.3.0-SNAPSHOT</java-module.version>
+        <java-module.version>0.3.0</java-module.version>
     </properties>
 
     <!-- comment added in release branch 0.0.8 -->
