@@ -10,7 +10,7 @@
 
     <groupId>com.fa.module-example</groupId>
     <artifactId>module-example</artifactId>
-    <version>0.0.14</version>
+    <version>0.0.15</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -23,6 +23,7 @@
     <!-- comment added in release 0.0.12 -->
     <!-- comment added in hotfix 0.0.13.1 -->
     <!-- comment added in hotfix 0.0.13.2 -->
+    <!-- comment added in release 0.0.15 -->
     <build>
         <plugins>
             <plugin>
