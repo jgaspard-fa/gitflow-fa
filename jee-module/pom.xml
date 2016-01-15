@@ -56,12 +56,21 @@
                 </configuration>
                 <executions>
                     <execution>
-                        <id>default-cli</id>
+                        <id>jgitflow-release-start</id>
                         <goals>
                             <goal>release-start</goal>
                         </goals>
                         <configuration>
-                            <!--<allowSnapshots>true</allowSnapshots>-->
+                            <allowSnapshots>true</allowSnapshots>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>jgitflow-release-finish</id>
+                        <goals>
+                            <goal>release-finish</goal>
+                        </goals>
+                        <configuration>
+                            <allowSnapshots>false</allowSnapshots>
                         </configuration>
                     </execution>
                 </executions>
