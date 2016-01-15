@@ -28,6 +28,7 @@
     <!-- comment added in develop while release 0.1.0 -->
     <!-- comment added in release 0.1.0 -->
     <!-- comment added in hotfix 0.1.1 -->
+    <!-- comment added in hotfix 0.2.1 -->
     <build>
         <plugins>
             <plugin>
