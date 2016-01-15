@@ -5,11 +5,13 @@
     <parent>
         <groupId>com.fa.module-example</groupId>
         <artifactId>module-example</artifactId>
-        <version>0.0.13.2</version>
+        <version>0.0.14</version>
     </parent>
 
     <!-- comment added in develop branch while release 0.0.8 -->
+    <!-- comment added in develop branch while release 0.0.13 and hotfix 0.0.13.1 -->
     <!-- comment added in release 0.0.13 after hotfix 0.0.13.1 -->
+    <!-- comment added in release 0.0.14 -->
     <artifactId>jee-module2</artifactId>
 
     <dependencies>

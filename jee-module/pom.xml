@@ -10,7 +10,7 @@
 
     <groupId>com.fa.module-example</groupId>
     <artifactId>module-example</artifactId>
-    <version>0.0.13.2</version>
+    <version>0.0.14</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -40,6 +40,7 @@
                     </flowInitContext>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <pushReleases>true</pushReleases>
+                    <pushHotfixes>true</pushHotfixes>
                 </configuration>
             </plugin>
         </plugins>
