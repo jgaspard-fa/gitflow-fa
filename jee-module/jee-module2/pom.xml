@@ -9,6 +9,7 @@
     </parent>
 
     <!-- comment added in develop branch while release 0.0.8 -->
+    <!-- comment added in develop branch while release 0.0.13 and hotfix 0.0.13.1 -->
     <artifactId>jee-module2</artifactId>
 
     <dependencies>
