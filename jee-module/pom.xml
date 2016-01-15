@@ -10,7 +10,7 @@
 
     <groupId>com.fa.module-example</groupId>
     <artifactId>module-example</artifactId>
-    <version>0.4.0</version>
+    <version>0.5.0</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -62,6 +62,24 @@
                         </goals>
                         <configuration>
                             <allowSnapshots>true</allowSnapshots>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>jgitflow-release-start</id>
+                        <goals>
+                            <goal>release-start</goal>
+                        </goals>
+                        <configuration>
+                            <allowSnapshots>true</allowSnapshots>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>jgitflow-release-finish</id>
+                        <goals>
+                            <goal>release-finish</goal>
+                        </goals>
+                        <configuration>
+                            <allowSnapshots>false</allowSnapshots>
                         </configuration>
                     </execution>
                 </executions>
