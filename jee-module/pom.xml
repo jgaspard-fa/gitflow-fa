@@ -54,6 +54,17 @@
                     <pushReleases>true</pushReleases>
                     <pushHotfixes>true</pushHotfixes>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>default-cli</id>
+                        <goals>
+                            <goal>release-start</goal>
+                        </goals>
+                        <configuration>
+                            <allowSnapshots>true</allowSnapshots>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
