@@ -61,7 +61,7 @@
                             <goal>release-start</goal>
                         </goals>
                         <configuration>
-                            <allowSnapshots>true</allowSnapshots>
+                            <!--<allowSnapshots>true</allowSnapshots>-->
                         </configuration>
                     </execution>
                 </executions>
