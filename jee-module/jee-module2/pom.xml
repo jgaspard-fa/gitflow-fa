@@ -5,13 +5,13 @@
     <parent>
         <groupId>com.fa.module-example</groupId>
         <artifactId>module-example</artifactId>
-        <version>0.0.8</version>
+        <version>0.0.9-SNAPSHOT</version>
     </parent>
 
     <!-- comment added in develop branch while release 0.0.8 -->
     <groupId>com.fa.module-example</groupId>
     <artifactId>jee-module1</artifactId>
-    <version>0.0.8</version>
+    <version>0.0.9-SNAPSHOT</version>
 
 
 </project>
