@@ -18,10 +18,31 @@
         <module>jee-module2</module>
     </modules>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>external.atlassian.jgitflow</groupId>
+                <artifactId>jgitflow-maven-plugin</artifactId>
+                <version>1.0-m5.1</version>
+                <configuration>
+                    <flowInitContext>
+                        <masterBranchName>master</masterBranchName>
+                        <developBranchName>develop</developBranchName>
+                        <featureBranchPrefix>feature.ex-</featureBranchPrefix>
+                        <releaseBranchPrefix>release.ex-</releaseBranchPrefix>
+                        <hotfixBranchPrefix>hotfix.ex-</hotfixBranchPrefix>
+                        <versionTagPrefix>tag.ex-</versionTagPrefix>
+                    </flowInitContext>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
     <scm>
         <connection>scm:git:https://github.com/jgaspard-fa/gitflow-fa.git</connection>
         <developerConnection>scm:git:https://github.com/jgaspard-fa/gitflow-fa.git</developerConnection>
       <tag>HEAD</tag>
-  </scm>
+    </scm>
 
 </project>
