@@ -10,7 +10,7 @@
 
     <groupId>com.fa.module-example</groupId>
     <artifactId>module-example</artifactId>
-    <version>0.0.7</version>
+    <version>0.0.8</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -18,6 +18,7 @@
         <module>jee-module2</module>
     </modules>
 
+    <!-- comment added in release branch 0.0.8 -->
     <build>
         <plugins>
             <plugin>
