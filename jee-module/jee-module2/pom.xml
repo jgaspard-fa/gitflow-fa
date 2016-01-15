@@ -21,6 +21,12 @@
             <artifactId>jee-module1</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.fa.gitflow-example</groupId>
+            <artifactId>java-module1</artifactId>
+            <version>${java-module.version}</version>
+        </dependency>
+
     </dependencies>
 
 
