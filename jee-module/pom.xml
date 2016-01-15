@@ -34,6 +34,7 @@
                         <versionTagPrefix>tag.ex-</versionTagPrefix>
                     </flowInitContext>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <pushReleases>true</pushReleases>
                 </configuration>
             </plugin>
         </plugins>
