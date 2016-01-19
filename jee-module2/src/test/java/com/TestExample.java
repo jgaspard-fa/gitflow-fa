@@ -5,6 +5,9 @@ import org.junit.Test;
 
 public class TestExample {
 
+    /**
+     * hotfix 0.34.1
+     */
     @Test
     public void test(){
 
