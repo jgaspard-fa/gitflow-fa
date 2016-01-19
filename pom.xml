@@ -35,7 +35,6 @@
     <!-- comment added in hotfix 0.1.1 -->
     <!-- comment added in release 0.3.0 -->
     <!-- comment added in hotfix 0.2.1 -->
-    <!-- comment added in develop while release 0.13.0 -->
     <build>
         <plugins>
             <plugin>
