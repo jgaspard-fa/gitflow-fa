@@ -6,7 +6,7 @@ public class TestExample {
 
     public void test(){
 
-        Assert.assertTrue(true);
+        Assert.assertTrue(false);
     }
 }
 
