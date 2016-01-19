@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.fa.module-example</groupId>
         <artifactId>module-example</artifactId>
-        <version>0.22.0</version>
+        <version>0.23.0</version>
     </parent>
 
     <!-- comment added in develop branch while release 0.0.8 -->
@@ -25,6 +25,13 @@
             <groupId>com.fa.gitflow-example</groupId>
             <artifactId>java-module1</artifactId>
             <version>${java-module.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>
