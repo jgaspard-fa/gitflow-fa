@@ -10,7 +10,7 @@
 
     <groupId>com.fa.module-example</groupId>
     <artifactId>module-example</artifactId>
-    <version>0.26.0-SNAPSHOT</version>
+    <version>0.26.0</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -63,7 +63,7 @@
     <scm>
         <connection>scm:git:https://github.com/jgaspard-fa/gitflow-fa.git</connection>
         <developerConnection>scm:git:https://github.com/jgaspard-fa/gitflow-fa.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>M2RELEASE-TAG-0.26.0</tag>
     </scm>
 
 </project>
