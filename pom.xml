@@ -10,7 +10,7 @@
 
     <groupId>com.fa.module-example</groupId>
     <artifactId>module-example</artifactId>
-    <version>0.50.0</version>
+    <version>0.50.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
