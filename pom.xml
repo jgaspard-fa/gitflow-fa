@@ -38,6 +38,7 @@
     <!-- comment added in rel 0.12.0 -->
     <!-- comment added in rel 0.21.0 -->
     <!-- comment added in rel 0.33.0 -->
+    <!-- comment added in hotf 0.49.3 -->
     <build>
         <plugins>
             <plugin>
