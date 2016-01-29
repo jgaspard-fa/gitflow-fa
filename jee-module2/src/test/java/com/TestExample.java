@@ -13,6 +13,7 @@ public class TestExample {
 
     /**
      * hotfix 0.34.1
+     * dev 0.54
      */
     @Test
     public void test(){
