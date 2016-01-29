@@ -50,10 +50,10 @@
                     <flowInitContext>
                         <masterBranchName>master</masterBranchName>
                         <developBranchName>develop</developBranchName>
-                        <featureBranchPrefix>feature.ex-</featureBranchPrefix>
-                        <releaseBranchPrefix>release.ex-</releaseBranchPrefix>
-                        <hotfixBranchPrefix>hotfix.ex-</hotfixBranchPrefix>
-                        <versionTagPrefix>tag.ex-</versionTagPrefix>
+                        <featureBranchPrefix>feature</featureBranchPrefix>
+                        <releaseBranchPrefix>release</releaseBranchPrefix>
+                        <hotfixBranchPrefix>hotfix</hotfixBranchPrefix>
+                        <versionTagPrefix>gitflow-fa</versionTagPrefix>
                     </flowInitContext>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <pushReleases>true</pushReleases>
