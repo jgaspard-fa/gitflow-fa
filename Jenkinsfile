@@ -7,6 +7,11 @@ node {
    stage 'Checkout'
    
    print "DEBUG: parameter repository = ${repository}"
+   
+   sh('echo $M2_HOME')
+   sh('echo $M2_HOME > ECHO')
+   def stdout = readFile('ECHO').trim()
+   print "out: " + stdout
 
    // Get some code from a GitHub repository
    //non git url: 'git@github.com:financeactive/' + repository + '.git'
