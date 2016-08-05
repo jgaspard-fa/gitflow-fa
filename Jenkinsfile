@@ -38,7 +38,7 @@ node {
         sh "${mvnHome}/bin/mvn -X -V -Dmaven.test.skip=true -P${profile} clean package"
    }
    
-   if (${skipTests}!=null && ${skipTests}.length()>0)
+   if (skipTests!=null && skipTests.length()>0)
         step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
    
    step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: emailextrecipients(['jgaspard@financeactive.com'])])
