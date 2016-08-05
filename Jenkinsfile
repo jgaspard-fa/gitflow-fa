@@ -35,11 +35,11 @@ node {
    stage 'Build'
    // Run the maven build
    withEnv(['M2_HOME=/home/service/maven3', 'JAVA_HOME=/home/service/jdk1.8']) {
-        sh "${mvnHome}/bin/mvn -V -Dmaven.test.skip=true -P${profile} clean package"
+        sh "${mvnHome}/bin/mvn -V -Dmaven.test.skip=true -P${profile} clean war"
    }
    
    if (skipTests!=null && skipTests.length()>0)
         step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
    
-   step([$class: 'Mailer', recipients: 'jgaspard@financeactive.com'])
+   step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'jgaspard@financeactive.com'])
 }
