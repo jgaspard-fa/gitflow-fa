@@ -12,6 +12,11 @@ node {
    sh('echo $M2_HOME > ECHO')
    def stdout = readFile('ECHO').trim()
    print "out: " + stdout
+   
+   sh('export M2_HOME=/home/service/maven3')
+   sh('echo $M2_HOME > ECHO')
+   def stdout = readFile('ECHO').trim()
+   print "out: " + stdout
 
    // Get some code from a GitHub repository
    //non git url: 'git@github.com:financeactive/' + repository + '.git'
