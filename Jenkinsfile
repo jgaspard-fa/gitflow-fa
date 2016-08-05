@@ -35,7 +35,7 @@ node {
    stage 'Build'
    // Run the maven build
    withEnv(['M2_HOME=/home/service/maven3', 'JAVA_HOME=/home/service/jdk1.8']) {
-        sh "${mvnHome}/bin/mvn -V -Dmaven.test.skip=true -P${profile} clean war"
+        sh "${mvnHome}/bin/mvn -V -Dmaven.test.skip=true -P${profile} clean package"
    }
    
    if (skipTests!=null && skipTests.length()>0)
