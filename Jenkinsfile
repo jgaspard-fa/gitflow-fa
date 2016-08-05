@@ -28,7 +28,7 @@ node {
    stage 'Build'
    // Run the maven build
    withEnv(["PATH+MAVEN=${tool 'maven3'}/bin"]) {
-   sh "${mvnHome}/bin/mvn -X -Dmaven.test.skip=true -P${profile} clean package"
+   sh "mvn -X -V -Dmaven.test.skip=true -P${profile} clean package"
    }
    step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
    
