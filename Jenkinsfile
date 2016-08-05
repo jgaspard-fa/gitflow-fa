@@ -1,5 +1,7 @@
 
-properties([[$class: 'ParametersDefinitionProperty', parameterDefinitions: [[$class: 'hudson.model.StringParameterDefinition', defaultValue: 'top10dependency', description: 'Some Description', name : 'repository'], [$class: 'hudson.model.StringParameterDefinition', defaultValue: 'source-javadoc,unit', description: 'Some Description', name: 'profile']]]])
+properties([[$class: 'ParametersDefinitionProperty', parameterDefinitions: [[$class: 'hudson.model.StringParameterDefinition', defaultValue: 'top10dependency', description: 'Some Description'
+, name : 'repository'], [$class: 'hudson.model.StringParameterDefinition', defaultValue: 'source-javadoc,unit', description: 'Some Description', name: 'profile']
+, [$class: 'hudson.model.StringParameterDefinition', defaultValue: '', description: 'Skip tests ?', name: 'skipTests']]]])
 
 node {
     
@@ -32,10 +34,12 @@ node {
    // Mark the code build 'stage'....
    stage 'Build'
    // Run the maven build
-   withEnv(['M2_HOME=/home/service/maven3']) {
-   sh "${mvnHome}/bin/mvn -X -V -Dmaven.test.skip=true -P${profile} clean package"
+   withEnv(['M2_HOME=/home/service/maven3', 'JAVA_HOME=/home/service/jdk1.8']) {
+        sh "${mvnHome}/bin/mvn -X -V -Dmaven.test.skip=true -P${profile} clean package"
    }
-   step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
+   
+   if (${skipTests}!=null && ${skipTests}.length()>0)
+        step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
    
    step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: emailextrecipients(['jgaspard@financeactive.com'])])
 }
