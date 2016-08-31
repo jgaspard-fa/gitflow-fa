@@ -48,9 +48,9 @@ node {
    
    withEnv(['M2_HOME=/home/service/maven3', 'JAVA_HOME=/home/service/jdk1.8']) {
         if (skipTests!=null && skipTests.length()>0)
-            sh "${mvnHome}/bin/mvn -V -Dmaven.test.skip=true -P${profile} clean package"
-        else
             sh "${mvnHome}/bin/mvn -V -P${profile} clean package"
+        else
+            sh "${mvnHome}/bin/mvn -V -Dmaven.test.skip=true -P${profile} clean package"
    }
    
    if (skipTests!=null && skipTests.length()>0)
