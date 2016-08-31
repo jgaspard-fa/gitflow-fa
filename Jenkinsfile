@@ -41,12 +41,16 @@ node {
    
    //def buildCommand = ${buildCommand1}  + ${buildCommand2}  + ${buildCommand3}
    //def buildCommand = ${buildCommand1}  ${buildCommand2}  ${buildCommand3}
-   def buildCommand = "${mvnHome}" + '/bin/mvn -V  -P' + "${profile}" + ' clean package'
-   //if (skipTests!=null && skipTests.length()>0)
-   //     buildCommand = buildCommand +  " -Dmaven.test.skip=true "
-   //buildCommand = buildCommand +  " -P${profile} clean package"
+   
+   // org.jenkinsci.plugins.scriptsecurity.sandbox.RejectedAccessException: Scripts not permitted to use method groovy.lang.GString plus java.lang.String
+   //def buildCommand = "${mvnHome}" + '/bin/mvn -V  -P' + "${profile}" + ' clean package'
+   
+   /
    withEnv(['M2_HOME=/home/service/maven3', 'JAVA_HOME=/home/service/jdk1.8']) {
-        sh buildCommand
+        if (skipTests!=null && skipTests.length()>0)
+            sh "${mvnHome}/bin/mvn -V -Dmaven.test.skip=true -P${profile} clean package"
+        else
+            sh "${mvnHome}/bin/mvn -V -P${profile} clean package"
    }
    
    if (skipTests!=null && skipTests.length()>0)
