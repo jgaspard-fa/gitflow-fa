@@ -36,7 +36,7 @@ node {
    
    // Run the maven build
    def buildCommand1 = '${mvnHome}/bin/mvn -V '
-   def buildCommand2 = ' -Dmaven.test.skip=true 
+   def buildCommand2 = ' -Dmaven.test.skip=true '
    def buildCommand3 = ' -P${profile} clean package'
    
    //def buildCommand = ${buildCommand1}  + ${buildCommand2}  + ${buildCommand3}
