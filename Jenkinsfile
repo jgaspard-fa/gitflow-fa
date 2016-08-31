@@ -35,13 +35,13 @@ node {
    stage 'Build'
    
    // Run the maven build
-   def buildCommand1 = '${mvnHome}/bin/mvn -V '
-   def buildCommand2 = ' -Dmaven.test.skip=true '
-   def buildCommand3 = ' -P${profile} clean package'
+   //def buildCommand1 = '${mvnHome}/bin/mvn -V '
+   //def buildCommand2 = ' -Dmaven.test.skip=true '
+   //def buildCommand3 = ' -P${profile} clean package'
    
    //def buildCommand = ${buildCommand1}  + ${buildCommand2}  + ${buildCommand3}
    //def buildCommand = ${buildCommand1}  ${buildCommand2}  ${buildCommand3}
-   def buildCommand = '${mvnHome}/bin/mvn -V ' + ' -P${profile} clean package'
+   def buildCommand = "${mvnHome}" + '/bin/mvn -V  -P' + "${profile}" + ' clean package'
    //if (skipTests!=null && skipTests.length()>0)
    //     buildCommand = buildCommand +  " -Dmaven.test.skip=true "
    //buildCommand = buildCommand +  " -P${profile} clean package"
