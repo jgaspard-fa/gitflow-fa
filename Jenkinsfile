@@ -39,7 +39,7 @@ node {
    def buildCommand2 = " -Dmaven.test.skip=true "
    def buildCommand3 = " -P${profile} clean package"
    
-   def buildCommand = "${buildCommand1}  + ${buildCommand2}  + ${buildCommand3}"
+   def buildCommand = ${buildCommand1}  + ${buildCommand2}  + ${buildCommand3}
    //if (skipTests!=null && skipTests.length()>0)
    //     buildCommand = buildCommand +  " -Dmaven.test.skip=true "
    //buildCommand = buildCommand +  " -P${profile} clean package"
