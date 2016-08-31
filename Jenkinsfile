@@ -33,9 +33,11 @@ node {
 
    // Mark the code build 'stage'....
    stage 'Build'
+   
    // Run the maven build
+   def buildCommand = "${mvnHome}/bin/mvn -V -Dmaven.test.skip=true -P${profile} clean package"
    withEnv(['M2_HOME=/home/service/maven3', 'JAVA_HOME=/home/service/jdk1.8']) {
-        sh "${mvnHome}/bin/mvn -V -Dmaven.test.skip=true -P${profile} clean package"
+        sh buildCommand
    }
    
    if (skipTests!=null && skipTests.length()>0)
