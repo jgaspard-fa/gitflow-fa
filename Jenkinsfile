@@ -34,17 +34,9 @@ node {
    // Mark the code build 'stage'....
    stage 'Build'
    
-   // Run the maven build
-   //def buildCommand1 = '${mvnHome}/bin/mvn -V '
-   //def buildCommand2 = ' -Dmaven.test.skip=true '
-   //def buildCommand3 = ' -P${profile} clean package'
-   
-   //def buildCommand = ${buildCommand1}  + ${buildCommand2}  + ${buildCommand3}
-   //def buildCommand = ${buildCommand1}  ${buildCommand2}  ${buildCommand3}
-   
+   // Run the maven build   
    // org.jenkinsci.plugins.scriptsecurity.sandbox.RejectedAccessException: Scripts not permitted to use method groovy.lang.GString plus java.lang.String
    //def buildCommand = "${mvnHome}" + '/bin/mvn -V  -P' + "${profile}" + ' clean package'
-   
    
    withEnv(['M2_HOME=/home/service/maven3', 'JAVA_HOME=/home/service/jdk1.8']) {
         if (skipTests!=null && skipTests.length()>0)
