@@ -9,6 +9,9 @@ node {
    stage 'Checkout'
    
    print "DEBUG: parameter repository = ${repository}"
+   print "DEBUG: parameter profile = ${profile}"
+   def profileContains = profile.indexOf('unit');
+   println "DEBUG: profile contains " + profileContains
    
    sh('echo $M2_HOME')
    sh('echo $M2_HOME > ECHO')
