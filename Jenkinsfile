@@ -48,7 +48,7 @@ node {
    //def buildCommand = "${mvnHome}" + '/bin/mvn -V  -P' + "${profile}" + ' clean package'
    
    withEnv(['M2_HOME=/home/service/maven3', 'JAVA_HOME=/home/service/jdk1.8']) {
-        sh "${mvnHome}/bin/mvn -V -Dmaven.test.skip=true -P${profile} clean package"
+        sh "${mvnHome}/bin/mvn -V -P${profile} clean package"
    }
    
    if (profileTest)
