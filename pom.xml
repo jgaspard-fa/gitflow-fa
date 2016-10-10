@@ -10,7 +10,7 @@
 
     <groupId>com.fa.module-example</groupId>
     <artifactId>module-example</artifactId>
-    <version>0.53.0</version>
+    <version>0.55.0</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -40,6 +40,7 @@
     <!-- comment added in rel 0.33.0 -->
     <!-- comment added in hotf 0.49.3 -->
     <!-- comment added in hotf 0.50.1 -->
+    <!-- comment added in rel 0.55.0 -->
     <build>
         <plugins>
             <!--<plugin>
@@ -50,10 +51,10 @@
                     <flowInitContext>
                         <masterBranchName>master</masterBranchName>
                         <developBranchName>develop</developBranchName>
-                        <featureBranchPrefix>feature.ex-</featureBranchPrefix>
-                        <releaseBranchPrefix>release.ex-</releaseBranchPrefix>
-                        <hotfixBranchPrefix>hotfix.ex-</hotfixBranchPrefix>
-                        <versionTagPrefix>tag.ex-</versionTagPrefix>
+                        <featureBranchPrefix>feature</featureBranchPrefix>
+                        <releaseBranchPrefix>release</releaseBranchPrefix>
+                        <hotfixBranchPrefix>hotfix</hotfixBranchPrefix>
+                        <versionTagPrefix>gitflow-fa</versionTagPrefix>
                     </flowInitContext>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <pushReleases>true</pushReleases>
