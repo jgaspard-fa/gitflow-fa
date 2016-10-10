@@ -40,9 +40,10 @@
     <!-- comment added in rel 0.33.0 -->
     <!-- comment added in hotf 0.49.3 -->
     <!-- comment added in hotf 0.50.1 -->
+    <!-- comment added in rel 0.55.0 -->
     <build>
         <plugins>
-            <plugin>
+            <!--<plugin>
                 <groupId>external.atlassian.jgitflow</groupId>
                 <artifactId>jgitflow-maven-plugin</artifactId>
                 <version>1.0-m5.1</version>
@@ -59,7 +60,7 @@
                     <pushReleases>true</pushReleases>
                     <pushHotfixes>true</pushHotfixes>
                 </configuration>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 
