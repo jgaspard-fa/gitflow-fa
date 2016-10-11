@@ -11,6 +11,7 @@ public class TestExample2 {
      * 0.47.1
      * rel 0.53.0
      * rel 0.53.0 other commit
+     * rel 0.56.0
      */
     @Test
     public void test(){
