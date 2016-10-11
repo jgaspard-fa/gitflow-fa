@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.fa.gitflow-example</groupId>
         <artifactId>java-module</artifactId>
-        <version>0.29.0-SNAPSHOT</version>
+        <version>0.29.0</version>
     </parent>
 
     <groupId>com.fa.module-example</groupId>
@@ -19,7 +19,7 @@
     </modules>
 
     <properties>
-        <java-module.version>0.7.0</java-module.version>
+        <java-module.version>0.29.0</java-module.version>
     </properties>
 
     <dependencyManagement>
@@ -27,7 +27,7 @@
             <dependency>
                 <groupId>com.fa.gitflow-example</groupId>
                 <artifactId>java-module</artifactId>
-                <version>0.29.0-SNAPSHOT</version>
+                <version>0.29.0</version>
                 <type>pom</type>
             </dependency>
         </dependencies>
