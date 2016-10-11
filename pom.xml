@@ -3,9 +3,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>dependency</artifactId>
-        <groupId>com.financeactive.top10.dependency</groupId>
-        <version>2015-15</version>
+        <groupId>com.fa.gitflow-example</groupId>
+        <artifactId>java-module</artifactId>
+        <version>0.29.0-SNAPSHOT</version>
     </parent>
 
     <groupId>com.fa.module-example</groupId>
@@ -21,6 +21,17 @@
     <properties>
         <java-module.version>0.7.0</java-module.version>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.fa.gitflow-example</groupId>
+                <artifactId>java-module</artifactId>
+                <version>0.29.0-SNAPSHOT</version>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <!-- comment added in release branch 0.0.8 -->
     <!-- comment added in develop while release 0.0.11 -->
