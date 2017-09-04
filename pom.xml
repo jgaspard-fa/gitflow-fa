@@ -16,6 +16,7 @@
     <modules>
         <module>jee-module1</module>
         <module>jee-module2</module>
+        <module>jee-module3</module>
     </modules>
 
     <properties>
